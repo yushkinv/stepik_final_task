@@ -5,7 +5,7 @@ from .login_page import LoginPage
 
 class MainPage(BasePage):
     def __init__(self, *args, **kwargs):
-        super(MainPage, self).__init__(*args, **kwargs)
+        super(MainPage, self).__init__(*args, **kwargs) #заглушка
 
     def go_to_login_page(self):
         link = self.browser.find_element(*MainPageLocators.LOGIN_LINK)
